@@ -1,0 +1,18 @@
+import java.util.Scanner;
+ 
+public class Solution {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int a = scan.nextInt();
+        String b;
+       while (a>0){
+           b = scan.next();
+           if(b.length() > 10){
+               System.out.println(b.substring(0, 1) + "" + (b.length()-2) + "" + b.substring(b.length()-1));
+           }else{
+               System.out.println(b);
+           }
+           a--;
+       }
+    }
+}
