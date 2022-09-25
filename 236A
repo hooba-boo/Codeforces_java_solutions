@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class BoyorGirl 
+{
+    public static void main(String args[])
+    {
+        Scanner z = new Scanner(System.in);
+        int x=0;
+        String s = z.next();
+        char[] c = s.toCharArray();
+        for(int i=0;i<c.length;i++)
+        {
+            int ctr=0;
+            for(int j=i;j<c.length;j++)
+            {
+                if(c[i]==c[j])
+                    ctr++;
+            }
+            if(ctr==1)
+                x++;
+        }
+        if(x%2==0)
+            System.out.println("CHAT WITH HER!");
+        else
+            System.out.println("IGNORE HIM!");
+    }
+}
