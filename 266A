@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class Solution{
+    public static void main(String args[]){
+        Scanner scan = new Scanner(System.in);
+        int a = scan.nextInt();
+        String b = scan.next();
+        char[] c = b.toCharArray();
+        char d = c[0];
+        int x=0;
+ 
+        for(int i = 1; i < c.length; i++){
+            if(d == c[i]) {
+                x++;
+            }else{
+                d=c[i];
+            }
+        }
+        System.out.println(x);
+ 
+    }
+}
